@@ -42,6 +42,7 @@ header {
     padding-right: 70px;
     padding-left: 50px;
     padding: 2rem;
+    margin-bottom: 5rem;
 }
 header nav {
     display: flex;
@@ -82,11 +83,15 @@ main .about p {
     font-size: 5rem;
     padding: 2rem;
     padding-bottom: 3rem;
+    padding-top: 3rem;
+    height: 100%;
 }
 .catalogo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 main .catalogo .tarjeta {
     background-color: aliceblue;
@@ -132,6 +137,9 @@ main .detalle {
     flex-direction: column;
     align-items: center;
 }
+.div-detalle {
+    height: 100%;
+}
 main .detalle div{
     width: 700px;
     text-align: center;
@@ -147,6 +155,9 @@ main .detalle p {
     font-size: 1.2rem;
     color: white;
     padding: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: justify;
 }
 
 /*-------------FOOTER--------------*/
@@ -208,6 +219,9 @@ footer {
 .contenedorServicios .tarjetaServicioContainer {
     padding: 1.5rem;
 }
+.contenedorDetalle .detalleServicio .div-detalle {
+    height: 100%;
+}
 .detalleServicio {
     display: flex;
     margin: 2rem;
@@ -229,6 +243,7 @@ footer {
     padding: 3rem;
     padding-top: 2rem;
     line-height: 2rem;
+    text-align: justify;
 }
 .detalleServicio ul {
     list-style: none;
@@ -272,27 +287,31 @@ footer {
         display: none;
     }
     .detalleServicio h1 {
-        padding-top: 3rem;
+        padding-top: 2rem;
         padding-bottom: 1rem;
     }
     .detalleServicio p {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .consulta label {
         padding-top: 0;
         padding-bottom: 0;
     }
+    .contenedorDetalle .detalleServicio .div-detalle {
+        padding: 3rem;
+    }
 }
 @media screen and (max-width: 900px) {
     .detalleServicio h1 {
+        padding: 0;
         padding-top: 2rem;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
     .detalleServicio p {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        line-height: 1.2rem;
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem; 
     }
     .contenedorDetalle {
         margin-top: 3rem;
@@ -312,19 +331,7 @@ footer {
     }
 }
 @media screen and (max-width: 750px) {
-    .detalleServicio h1 {
-        font-size: 1rem;
-    }
-    .detalleServicio p {
-        font-size: 0.8rem;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
-    }
-    .detalleServicio ul {
-        font-size: 0.8rem;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+    
     main .detalle h1 {
         font-size: 2rem;
     }
@@ -396,6 +403,7 @@ footer {
         padding: 1rem;
         padding-top: 0;
         line-height: 1.2;
+        
     }
     .contenedorServicios {
         margin-left: 2rem;
@@ -414,8 +422,6 @@ footer {
         left: 50%;
     }
     .about p{
-        margin: 0;
-        padding: 0;
         line-height: 1.2;
     }
 }
