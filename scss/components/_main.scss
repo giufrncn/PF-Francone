@@ -1,0 +1,92 @@
+@import"../base/variables";
+main {
+    color:$color-textos-secundario;
+    width: 1100px;
+    width: 90%;
+    margin-left: 3rem;
+    .about {
+        p {
+            font-size: 5rem;
+            padding: 2rem;
+            padding-bottom: 3rem;
+            padding-top: 3rem;
+            height: 100%;
+        }
+    }
+    .catalogo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .tarjeta {
+            background-color:$color-textos-secundario;
+            margin: 22px;
+            width: 430px;
+            height: 430px;
+            border-radius: 60%;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 20px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            transition-property: border-radius;
+            transition-duration: 2s;
+            &:hover {
+                border-radius: 30%;
+            }
+            img {
+            }
+            .servicio {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: xx-large;
+                color:$color-textos;
+                text-transform: lowercase;
+            }
+            a {
+                .ver-mas {
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: medium;
+                    color:$color-textos;
+                    text-transform: lowercase;
+                    &:hover {
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+    .detalle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .div-detalle {
+            width: 700px;
+            text-align: center;
+            a {
+                h1 {
+                    font-size: 4rem;
+                    color:$color-textos;
+                    text-transform: lowercase;
+                    padding: 2rem;
+                    padding-bottom: 0;
+                }
+            }
+            p {
+                font-size: 1.2rem;
+                color:$color-textos;
+                padding: 2rem;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                text-align: justify;
+            }
+        }
+    }
+}

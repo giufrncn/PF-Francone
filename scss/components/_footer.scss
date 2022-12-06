@@ -1,0 +1,45 @@
+@import"../base/variables";
+footer {
+    display: grid;
+    grid-area: footer;
+    margin: 2rem;
+    .foot {
+        display: flex;
+        flex-direction: row;
+        justify-content:    space-between;
+        a {
+            .bi-arrow-up-circle-fill {
+                color:$color-textos;
+                margin: 2rem;
+                margin-bottom: 1rem;
+                font-size: xx-large;
+                position:fixed;
+	            width:60px;
+	            height:60px;
+	            bottom:1px;
+	            right:1200px;
+	            border-radius:50px;
+	            text-align:center;
+                font-size:30px;
+                z-index:100;
+            }
+        }
+        .float {
+            position:fixed;
+	        width:60px;
+	        height:60px;
+	        bottom:40px;
+	        right:40px;
+	        border-radius:50px;
+	        text-align:center;
+            font-size:30px;
+            z-index:100;
+            img {
+                width: 70px;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

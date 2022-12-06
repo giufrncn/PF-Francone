@@ -1,0 +1,40 @@
+@import"../base/variables";
+header {
+    background-image: url(../img/fondo.png);
+    border-radius: 10px;
+    margin: 25px;
+    padding-right: 70px;
+    padding-left: 50px;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        a {
+            img {
+                width: 140px;
+                background-color:$color-fondos;
+                margin: 1rem;
+                padding: 0.5rem;
+            }
+        }
+        ul {
+            background-color:$color-fondos;
+            margin: 1rem;
+            padding: 0.5rem;
+            li {
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:$color-textos;
+                    &:hover {
+                        color:$color-hover;
+                    }
+                }
+            }
+        }
+    }
+        
+}

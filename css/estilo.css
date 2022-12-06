@@ -139,8 +139,6 @@ main .detalle {
 }
 .div-detalle {
     height: 100%;
-}
-main .detalle div{
     width: 700px;
     text-align: center;
 }

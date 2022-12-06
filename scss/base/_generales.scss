@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import"../base/variables";
+
+.grid-container {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 120px auto 100px;
+    grid-template-areas: 
+    header header
+    main main
+    footer footer;
+}
+.encabezado {
+    display: grid;
+    grid-area: header;
+}
+.contenido {
+    display: grid;
+    grid-area: main;
+}
+.pie {
+    display: grid;
+    grid-area: footer;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Arimo', sans-serif;
+    margin: 1rem;
+}

@@ -1,0 +1,83 @@
+@import"../base/variables";
+.main-views {
+    .contenedorServicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+        margin: 2rem;
+        margin-top: 5rem;
+        margin-left: 4rem;
+        .tarjetaServicioContainer {
+            padding: 1.5rem;
+            .tarjetaServicio {
+                a {
+                }
+                img {
+                }
+            }
+        }
+    }
+    .contenedorDetalle {
+        margin-top: 7rem;
+        .detalleServicio {
+            display: flex;
+            margin: 2rem;
+            background-color:$color-fondos;
+            border-radius: 10%;
+            img {
+                width: 500px;
+            }
+            .div-detalle {
+                height: 100%;
+                a{
+                }
+                h1 {
+                    font-size: 1.5rem;
+                    color:$color-textos;
+                    padding: 2rem;
+                    padding-top: 4rem;
+                    text-align: center;
+                }
+                p {
+                    color:$color-textos;
+                    padding: 3rem;
+                    padding-top: 2rem;
+                    line-height: 2rem;
+                    text-align: justify;
+                }
+                ul {
+                    list-style: none;
+                    padding: 3rem;
+                    li {
+                        a {
+                            i {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .form {
+        display: flex;
+        justify-content: center;
+        background-color:$color-form;
+        margin-top: 3rem;
+        a {
+        }
+        .consulta {
+            width: 90%;
+            height: 1200px;
+            margin-top: 3rem;
+            font-weight: bold;
+            label {
+                padding: 0.5rem;
+                padding-top: 2rem;
+                padding-left: 0;
+            }
+            text-area {
+            }
+        }
+    }
+}

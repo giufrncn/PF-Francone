@@ -1,0 +1,172 @@
+@media screen and (max-width: 1075px) {
+    main .about p {
+        font-size: 3rem;
+    }
+    main .detalle .div-detalle a h1 {
+        font-size: 3rem;
+    }
+    .main-views .contenedorDetalle .detalleServicio {
+        border-radius: 0;
+    }
+    .main-views .contenedorDetalle .detalleServicio img {
+        display: none;
+    }
+    .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .main-views .contenedorDetalle .detalleServicio .div-detalle p {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .main-views .form .consulta label {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .main-views .contenedorDetalle .detalleServicio .div-detalle{
+        padding: 3rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
+        padding: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .main-views .contenedorDetalle .detalleServicio .div-detalle p {
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem; 
+    }
+    .main-views .contenedorDetalle {
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    header {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    main .detalle .div-detalle a h1 {
+        font-size: 2rem;
+    }
+    main .detalle .div-detalle p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    main .detalle .div-detalle a h1 {
+        font-size: 2rem;
+    }
+    main .detalle .div-detalle p {
+        font-size: 1rem;
+    }
+    .main-views .contenedorServicios {
+        margin-left: 1rem;
+    }
+    .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
+        padding-top: 2rem;
+    }
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    .main-views .contenedorServicios {
+        margin-left: 2rem;
+    }
+    .main-views .contenedorDetalle {
+        margin-left: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .main-views .form {
+        margin-left: 2rem;
+    }
+    .main-views .form .consulta {
+        height: 500px;
+        margin-top: 3rem;
+    }
+    main .detalle .div-detalle {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main-views .contenedorServicios {
+        margin-left: 0rem;
+    }
+    main {
+        margin-left: 2rem;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-views .contenedorDetalle {
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .main-views .contenedorDetalle .detalleServicio {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    main .detalle {
+        padding-bottom: 2rem;
+    }
+    main .detalle .div-detalle a h1 {
+        padding: 1rem;
+    }
+    main .detalle .div-detalle p {
+        padding: 1rem;
+        padding-top: 0;
+        line-height: 1.2;
+        
+    }
+    .main-views .contenedorServicios {
+        margin-left: 2rem;
+    }
+    .main-views .form .consulta {
+        height: 350px;
+        margin-top: 3rem;
+    }
+    main .catalogo .tarjeta {
+        width: 330px;
+        height: 330px;
+    }
+    main .catalogo .tarjeta a .ver-mas {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+    }
+    main .about p {
+        line-height: 1.2;
+    }
+}
+@media screen and (max-width: 350px) {
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    .main-views .contenedorServicios {
+        margin-left: 2rem;
+    }
+    .main-views .contenedorDetalle {
+        width: 100%;
+    }
+    .main-views .contenedorDetalle .detalleServicio {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    main .catalogo .tarjeta {
+        width: 300px;
+        height: 300px;
+    }
+}
