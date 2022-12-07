@@ -23,34 +23,40 @@
         .detalleServicio {
             display: flex;
             margin: 2rem;
-            background-color:$color-fondos;
+            background-color:nth($colores, 1);
             border-radius: 10%;
             img {
                 width: 500px;
             }
             .div-detalle {
-                height: 100%;
+                max-height: 100%;
                 a{
                 }
                 h1 {
-                    font-size: 1.5rem;
-                    color:$color-textos;
+                    font-size: 3rem;
+                    color:nth($colores, 3);
                     padding: 2rem;
                     padding-top: 4rem;
                     text-align: center;
+                    text-transform: lowercase;
+                    font-weight: bold;
                 }
                 p {
-                    color:$color-textos;
+                    color:nth($colores, 3);
                     padding: 3rem;
                     padding-top: 2rem;
                     line-height: 2rem;
+                    text-transform: uppercase;
                     text-align: justify;
                 }
                 ul {
                     list-style: none;
                     padding: 3rem;
                     li {
-                        a {
+                        a { font-size: larger;
+                            &:hover {
+                                color: nth($colores, 5);
+                            }
                             i {
                             }
                         }
@@ -62,7 +68,7 @@
     .form {
         display: flex;
         justify-content: center;
-        background-color:$color-form;
+        background-color:nth($colores, 5);
         margin-top: 3rem;
         a {
         }

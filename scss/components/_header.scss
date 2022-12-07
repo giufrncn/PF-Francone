@@ -14,13 +14,13 @@ header {
         a {
             img {
                 width: 140px;
-                background-color:$color-fondos;
+                background-color:nth($colores, 1);
                 margin: 1rem;
                 padding: 0.5rem;
             }
         }
         ul {
-            background-color:$color-fondos;
+            background-color:nth($colores, 1);
             margin: 1rem;
             padding: 0.5rem;
             li {
@@ -28,9 +28,9 @@ header {
                 a{
                     text-decoration: none;
                     text-transform: uppercase;
-                    color:$color-textos;
+                    color:nth($colores, 3);
                     &:hover {
-                        color:$color-hover;
+                        color:nth($colores, 2);
                     }
                 }
             }

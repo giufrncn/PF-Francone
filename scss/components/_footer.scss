@@ -6,10 +6,10 @@ footer {
     .foot {
         display: flex;
         flex-direction: row;
-        justify-content:    space-between;
+        justify-content: space-between;
         a {
             .bi-arrow-up-circle-fill {
-                color:$color-textos;
+                color:nth($colores, 3);
                 margin: 2rem;
                 margin-bottom: 1rem;
                 font-size: xx-large;

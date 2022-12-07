@@ -112,12 +112,15 @@ main {
   main .detalle {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center; }
     main .detalle .div-detalle {
       width: 700px;
-      text-align: center; }
+      text-align: center;
+      border: 4px solid aliceblue;
+      margin: 10px; }
       main .detalle .div-detalle a h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
         color: white;
         text-transform: lowercase;
         padding: 2rem;
@@ -188,22 +191,29 @@ footer {
     .main-views .contenedorDetalle .detalleServicio img {
       width: 500px; }
     .main-views .contenedorDetalle .detalleServicio .div-detalle {
-      height: 100%; }
+      max-height: 100%; }
       .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
         color: white;
         padding: 2rem;
         padding-top: 4rem;
-        text-align: center; }
+        text-align: center;
+        text-transform: lowercase;
+        font-weight: bold; }
       .main-views .contenedorDetalle .detalleServicio .div-detalle p {
         color: white;
         padding: 3rem;
         padding-top: 2rem;
         line-height: 2rem;
+        text-transform: uppercase;
         text-align: justify; }
       .main-views .contenedorDetalle .detalleServicio .div-detalle ul {
         list-style: none;
         padding: 3rem; }
+        .main-views .contenedorDetalle .detalleServicio .div-detalle ul li a {
+          font-size: larger; }
+          .main-views .contenedorDetalle .detalleServicio .div-detalle ul li a:hover {
+            color: #f7b2c1; }
 
 .main-views .form {
   display: flex;
@@ -223,6 +233,11 @@ footer {
 @media screen and (max-width: 1075px) {
   main .about p {
     font-size: 3rem; }
+  main .detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   main .detalle .div-detalle a h1 {
     font-size: 3rem; }
   .main-views .contenedorDetalle .detalleServicio {
@@ -251,19 +266,34 @@ footer {
     padding-top: 1rem;
     padding-bottom: 0.5rem; }
   .main-views .contenedorDetalle {
-    margin-top: 3rem; } }
+    margin-top: 3rem; }
+  main .detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 @media screen and (max-width: 800px) {
   header {
     width: 100%;
     padding: 0;
     margin: 0; }
+  main .detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   main .detalle .div-detalle a h1 {
     font-size: 2rem; }
   main .detalle .div-detalle p {
     font-size: 1rem; } }
 
 @media screen and (max-width: 750px) {
+  main .detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   main .detalle .div-detalle a h1 {
     font-size: 2rem; }
   main .detalle .div-detalle p {
@@ -310,7 +340,11 @@ footer {
     margin: 0;
     padding: 0; }
   main .detalle {
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   main .detalle .div-detalle a h1 {
     padding: 1rem; }
   main .detalle .div-detalle p {
@@ -332,10 +366,15 @@ footer {
   main .about p {
     line-height: 1.2; } }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 320px) {
   main {
     margin: 0;
     padding: 0; }
+  main .detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .main-views .contenedorServicios {
     margin-left: 2rem; }
   .main-views .contenedorDetalle {
