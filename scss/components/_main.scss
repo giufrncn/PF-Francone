@@ -64,10 +64,7 @@ main {
         }
     }
     .detalle {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex,column,center,center);
         .div-detalle {
             width: 700px;
             text-align: center;
@@ -89,6 +86,10 @@ main {
                 padding-top: 3rem;
                 padding-bottom: 3rem;
                 text-align: justify;
+                &::first-line {
+                    font-weight: bolder;
+                    color:nth($colores, 5);
+                }
             }
         }
     }

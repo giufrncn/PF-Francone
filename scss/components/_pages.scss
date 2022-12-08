@@ -10,6 +10,8 @@
         margin-left: 4rem;
         .tarjetaServicioContainer {
             padding: 1.5rem;
+            overflow: hidden;
+            position: relative;
             .tarjetaServicio {
                 a {
                 }
@@ -65,24 +67,46 @@
             }
         }
     }
+}
+.main-form {
     .form {
-        display: flex;
-        justify-content: center;
+        @include flex (flex,row,center,center)
         background-color:nth($colores, 5);
         margin-top: 3rem;
-        a {
-        }
         .consulta {
+            display: flex;
+            flex: row;
+            justify-content: space-between;
             width: 90%;
-            height: 1200px;
-            margin-top: 3rem;
+            padding: 2rem;
+            margin: 3rem;
             font-weight: bold;
-            label {
-                padding: 0.5rem;
-                padding-top: 2rem;
-                padding-left: 0;
+            border: 2px solid black;
+            input {
+                width: 75vh;
+                background-color: nth($colores, 5);
+                margin: 1rem;
+                margin-top: 3rem;
+                border: 2px solid black;
+                box-shadow: 9px 9px 0px 0px #6452AC;
+                -webkit-box-shadow: 9px 9px 0px 0px #6452AC;
+                -moz-box-shadow: 9px 9px 0px 0px #6452AC;
+                border-radius: 0;
             }
-            text-area {
+            .clic {
+                margin-left: 2rem;
+                margin-top: 2rem;
+                width: 20vh;
+                box-shadow: none;
+            }
+            .dejanos {
+                width: 74vh;
+                background-color: nth($colores, 5);
+                padding: 6rem;
+                border: 2px solid black;
+                box-shadow: 21px 23px 0px 3px #6452AC;
+                -webkit-box-shadow: 21px 23px 0px 3px #6452AC;
+                -moz-box-shadow: 21px 23px 0px 3px #6452AC;
             }
         }
     }

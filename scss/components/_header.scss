@@ -8,9 +8,7 @@ header {
     padding: 2rem;
     margin-bottom: 5rem;
     nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        @include flex (flex,row,space-around,center)
         a {
             img {
                 width: 140px;

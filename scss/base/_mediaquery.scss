@@ -25,13 +25,19 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    .main-views .form .consulta label {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
     .main-views .contenedorDetalle .detalleServicio .div-detalle{
         padding: 3rem;
     }
+    .main-form .form .consulta {
+        flex-direction: column;
+    }
+    .main-form .form .consulta input {
+        width: 90%;
+    }
+    .main-form .form .consulta .dejanos {
+        width: 90%;
+    }
+    
 }
 @media screen and (max-width: 900px) {
     .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
@@ -53,6 +59,9 @@
         justify-content: center;
         align-items: center;
     }
+    .main-form .form .consulta {
+        margin: 2rem;
+    }
 }
 @media screen and (max-width: 800px) {
     header {
@@ -72,6 +81,12 @@
     main .detalle .div-detalle p {
         font-size: 1rem;
     }
+    .main-form .form .consulta input {
+        width: 80%;
+    }
+    .main-form .form .consulta .dejanos {
+        width: 80%;
+    } 
 }
 @media screen and (max-width: 750px) {
     main .detalle {
@@ -92,10 +107,6 @@
     .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
         padding-top: 2rem;
     }
-    main {
-        margin: 0;
-        padding: 0;
-    }
     .main-views .contenedorServicios {
         margin-left: 2rem;
     }
@@ -104,15 +115,11 @@
         width: 100%;
         margin-top: 2rem;
     }
-    .main-views .form {
-        margin-left: 2rem;
-    }
-    .main-views .form .consulta {
-        height: 500px;
-        margin-top: 3rem;
-    }
     main .detalle .div-detalle {
         width: 100%;
+    }
+    .main-form .form .consulta .dejanos {
+        padding: 2rem;
     }
 }
 @media screen and (max-width: 500px) {
@@ -175,6 +182,13 @@
     }
     main .about p {
         line-height: 1.2;
+    }
+    .main-form .form .consulta input {
+        font-size: small;
+    }
+    .main-form .form .consulta .dejanos {
+        padding: 1rem;
+        font-size: small;
     }
 }
 @media screen and (max-width: 320px) {
