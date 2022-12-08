@@ -40,7 +40,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    width: 90%; }
     header nav a img {
       width: 140px;
       background-color: #302303;
@@ -59,24 +60,23 @@ header {
           header nav ul li a:hover {
             color: #6452AC; }
 
-main {
-  color: aliceblue;
-  width: 1100px;
-  width: 90%;
-  margin-left: 3rem; }
-  main .about p {
-    font-size: 5rem;
-    padding: 2rem;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    height: 100%; }
-  main .catalogo {
+.contenido {
+  color: aliceblue; }
+  .contenido .about {
+    width: 100%; }
+    .contenido .about p {
+      font-size: 5rem;
+      padding: 2rem;
+      padding-bottom: 3rem;
+      padding-top: 3rem;
+      height: 100%; }
+  .contenido .catalogo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 5rem;
     padding-bottom: 5rem; }
-    main .catalogo .tarjeta {
+    .contenido .catalogo .tarjeta {
       background-color: aliceblue;
       margin: 22px;
       width: 430px;
@@ -90,9 +90,9 @@ main {
       text-align: center;
       transition-property: border-radius;
       transition-duration: 2s; }
-      main .catalogo .tarjeta:hover {
+      .contenido .catalogo .tarjeta:hover {
         border-radius: 30%; }
-      main .catalogo .tarjeta .servicio {
+      .contenido .catalogo .tarjeta .servicio {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -100,7 +100,7 @@ main {
         font-size: xx-large;
         color: white;
         text-transform: lowercase; }
-      main .catalogo .tarjeta a .ver-mas {
+      .contenido .catalogo .tarjeta a .ver-mas {
         position: absolute;
         top: 70%;
         left: 50%;
@@ -108,32 +108,36 @@ main {
         font-size: medium;
         color: white;
         text-transform: lowercase; }
-        main .catalogo .tarjeta a .ver-mas:hover {
+        .contenido .catalogo .tarjeta a .ver-mas:hover {
           font-weight: bolder; }
-  main .detalle {
+  .contenido .detalle {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    main .detalle .div-detalle {
-      width: 700px;
+    .contenido .detalle .div-detalle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
       text-align: center;
       border: 4px solid aliceblue;
       margin: 10px; }
-      main .detalle .div-detalle a h1 {
+      .contenido .detalle .div-detalle a h1 {
         font-size: 3.5rem;
         color: white;
         text-transform: lowercase;
         padding: 2rem;
         padding-bottom: 0; }
-      main .detalle .div-detalle p {
+      .contenido .detalle .div-detalle p {
         font-size: 1.2rem;
         color: white;
         padding: 2rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
         text-align: justify; }
-        main .detalle .div-detalle p::first-line {
+        .contenido .detalle .div-detalle p::first-line {
           font-weight: bolder;
           color: #f7b2c1; }
 
@@ -174,52 +178,58 @@ footer {
         footer .foot .float img:hover {
           opacity: 0.5; }
 
-.main-views .contenedorServicios {
+.main-views {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 90%;
-  margin: 2rem;
-  margin-top: 5rem;
-  margin-left: 4rem; }
-  .main-views .contenedorServicios .tarjetaServicioContainer {
-    padding: 1.5rem;
-    overflow: hidden;
-    position: relative; }
-
-.main-views .contenedorDetalle {
-  margin-top: 7rem; }
-  .main-views .contenedorDetalle .detalleServicio {
+  flex-direction: column; }
+  .main-views .contenedorServicios {
     display: flex;
-    margin: 2rem;
-    background-color: #302303;
-    border-radius: 10%; }
-    .main-views .contenedorDetalle .detalleServicio img {
-      width: 500px; }
-    .main-views .contenedorDetalle .detalleServicio .div-detalle {
-      max-height: 100%; }
-      .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
-        font-size: 3rem;
-        color: white;
-        padding: 2rem;
-        padding-top: 4rem;
-        text-align: center;
-        text-transform: lowercase;
-        font-weight: bold; }
-      .main-views .contenedorDetalle .detalleServicio .div-detalle p {
-        color: white;
-        padding: 3rem;
-        padding-top: 2rem;
-        line-height: 2rem;
-        text-transform: uppercase;
-        text-align: justify; }
-      .main-views .contenedorDetalle .detalleServicio .div-detalle ul {
-        list-style: none;
-        padding: 3rem; }
-        .main-views .contenedorDetalle .detalleServicio .div-detalle ul li a {
-          font-size: larger; }
-          .main-views .contenedorDetalle .detalleServicio .div-detalle ul li a:hover {
-            color: #f7b2c1; }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem; }
+    .main-views .contenedorServicios .tarjetaServicioContainer {
+      padding: 1.5rem;
+      overflow: hidden;
+      position: relative; }
+  .main-views .contenedorDetalle {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main-views .contenedorDetalle .detalleServicio {
+      display: flex;
+      margin: 2rem;
+      background-color: #302303;
+      border-radius: 10%; }
+      .main-views .contenedorDetalle .detalleServicio img {
+        width: 500px; }
+      .main-views .contenedorDetalle .detalleServicio .div-detalle {
+        max-height: 100%; }
+        .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
+          font-size: 3rem;
+          color: white;
+          padding: 2rem;
+          padding-top: 4rem;
+          text-align: center;
+          text-transform: lowercase;
+          font-weight: bold; }
+        .main-views .contenedorDetalle .detalleServicio .div-detalle p {
+          color: white;
+          padding: 3rem;
+          padding-top: 2rem;
+          line-height: 2rem;
+          text-transform: uppercase;
+          text-align: justify; }
+        .main-views .contenedorDetalle .detalleServicio .div-detalle ul {
+          list-style: none;
+          padding: 3rem; }
+          .main-views .contenedorDetalle .detalleServicio .div-detalle ul li a {
+            font-size: larger; }
+            .main-views .contenedorDetalle .detalleServicio .div-detalle ul li a:hover {
+              color: #f7b2c1; }
 
 .main-form .form {
   display: flex;
@@ -227,12 +237,12 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #f7b2c1;
-  margin-top: 3rem; }
+  margin: 3rem;
+  width: 92%; }
   .main-form .form .consulta {
     display: flex;
     flex: row;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: center;
     padding: 2rem;
     margin: 3rem;
     font-weight: bold;
@@ -262,14 +272,9 @@ footer {
       -moz-box-shadow: 21px 23px 0px 3px #6452AC; }
 
 @media screen and (max-width: 1075px) {
-  main .about p {
+  .contenido .about p {
     font-size: 3rem; }
-  main .detalle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  main .detalle .div-detalle a h1 {
+  .contenido .detalle .div-detalle a h1 {
     font-size: 3rem; }
   .main-views .contenedorDetalle .detalleServicio {
     border-radius: 0; }
@@ -281,8 +286,6 @@ footer {
   .main-views .contenedorDetalle .detalleServicio .div-detalle p {
     padding-top: 1rem;
     padding-bottom: 1rem; }
-  .main-views .contenedorDetalle .detalleServicio .div-detalle {
-    padding: 3rem; }
   .main-form .form .consulta {
     flex-direction: column; }
   .main-form .form .consulta input {
@@ -292,38 +295,22 @@ footer {
 
 @media screen and (max-width: 900px) {
   .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
-    padding: 0;
+    padding: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem; }
   .main-views .contenedorDetalle .detalleServicio .div-detalle p {
-    padding: 0;
+    padding: 2rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem; }
   .main-views .contenedorDetalle {
     margin-top: 3rem; }
-  main .detalle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
   .main-form .form .consulta {
     margin: 2rem; } }
 
 @media screen and (max-width: 800px) {
-  header {
-    width: 100%;
-    padding: 0;
-    margin: 0; }
-  main .detalle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  main .detalle .div-detalle {
-    width: 800px; }
-  main .detalle .div-detalle a h1 {
+  .contenido .detalle .div-detalle a h1 {
     font-size: 2rem; }
-  main .detalle .div-detalle p {
+  .contenido .detalle .div-detalle p {
     font-size: 1rem; }
   .main-form .form .consulta input {
     width: 80%; }
@@ -331,86 +318,57 @@ footer {
     width: 80%; } }
 
 @media screen and (max-width: 750px) {
-  main .detalle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  main .detalle .div-detalle {
-    width: 600px; }
-  main .detalle .div-detalle a h1 {
+  .contenido .detalle .div-detalle a h1 {
     font-size: 2rem; }
-  main .detalle .div-detalle p {
+  .contenido .detalle .div-detalle p {
     font-size: 1rem; }
-  .main-views .contenedorServicios {
-    margin-left: 1rem; }
-  .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
-    padding-top: 2rem; }
-  .main-views .contenedorServicios {
-    margin-left: 2rem; }
-  .main-views .contenedorDetalle {
-    margin-left: 1rem;
-    width: 100%;
-    margin-top: 2rem; }
-  main .detalle .div-detalle {
-    width: 100%; }
   .main-form .form .consulta .dejanos {
     padding: 2rem; }
   .main-form .form {
-    margin-right: 2rem; } }
+    margin: 0;
+    width: 100%; } }
 
 @media screen and (max-width: 500px) {
-  .main-views .contenedorServicios {
-    margin-left: 0rem; }
-  main {
-    margin-left: 2rem; }
   header nav {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  main .detalle .div-detalle {
-    width: 400px; }
   .main-views .contenedorDetalle {
-    width: 100%;
-    margin-top: 1rem;
-    margin-left: 1rem; }
+    width: 100%; }
   .main-views .contenedorDetalle .detalleServicio {
     width: 100%;
-    margin: 0;
+    padding-bottom: 0;
     margin-bottom: 1rem; }
-  main {
+  .main-views .contenedorServicios .tarjetaServicioContainer .tarjetaServicio img {
+    width: 100%; }
+  .main-views .contenedorDetalle .detalleServicio .div-detalle h1 {
+    font-size: x-large;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+  .main-views .contenedorDetalle .detalleServicio .div-detalle p {
+    line-height: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  .contenido {
     margin: 0;
     padding: 0; }
-  main .detalle {
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0; }
-  main .detalle .div-detalle a h1 {
+  .contenido .detalle {
+    padding-bottom: 2rem; }
+  .contenido .detalle .div-detalle a h1 {
     padding: 1rem; }
-  main .detalle .div-detalle p {
+  .contenido .detalle .div-detalle p {
     padding: 1rem;
     padding-top: 0;
     line-height: 1.2; }
-  .main-views .contenedorServicios {
-    margin-left: 2rem; }
-  .main-views .form .consulta {
-    height: 350px;
-    margin-top: 3rem; }
-  main .catalogo .tarjeta {
+  .contenido .catalogo .tarjeta {
     width: 330px;
     height: 330px; }
-  main .catalogo .tarjeta a .ver-mas {
+  .contenido .catalogo .tarjeta a .ver-mas {
     position: absolute;
     top: 80%;
     left: 50%; }
-  main .about p {
+  .contenido .about p {
     line-height: 1.2; }
-  .main-form .form {
-    margin-right: 0;
-    margin-left: 3rem; }
   .main-form .form .consulta input {
     font-size: small; }
   .main-form .form .consulta .dejanos {
@@ -418,24 +376,14 @@ footer {
     font-size: small; } }
 
 @media screen and (max-width: 320px) {
-  main {
+  .contenido {
     margin: 0;
     padding: 0; }
-  main .detalle .div-detalle {
-    width: 300px; }
-  main .detalle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .main-views .contenedorServicios {
-    margin-left: 2rem; }
   .main-views .contenedorDetalle {
     width: 100%; }
   .main-views .contenedorDetalle .detalleServicio {
     width: 100%;
-    margin: 0;
     margin-bottom: 1rem; }
-  main .catalogo .tarjeta {
+  .contenido .catalogo .tarjeta {
     width: 300px;
     height: 300px; } }
