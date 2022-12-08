@@ -68,6 +68,7 @@
         }
     }
 }
+
 .main-form {
     .form {
         @include flex (flex,row,center,center)
@@ -110,4 +111,4 @@
             }
         }
     }
-}
+}    
