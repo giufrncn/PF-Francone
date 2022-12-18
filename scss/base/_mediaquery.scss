@@ -47,6 +47,9 @@
         margin: 2rem;
     }
 }
+.contenido .detalle .div-detalle {
+    height: none;
+}
 @media screen and (max-width: 800px) {
     .contenido .detalle .div-detalle a h1 {
         font-size: 2rem;
@@ -74,6 +77,9 @@
     .main-form .form {
         margin: 0;
         width: 100%;
+    }
+    .contenido .detalle .div-detalle {
+        height: auto;
     }
 }
 @media screen and (max-width: 500px) {

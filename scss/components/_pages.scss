@@ -80,6 +80,8 @@
         @include flex (flex,row,center,center)
         background-color:nth($colores, 5);
         margin: 3rem;
+        margin-top: 0;
+        margin-bottom: 4rem;
         width: 92%;
         .consulta {
             display: flex;
@@ -118,3 +120,73 @@
         }
     }
 }    
+.main-clientes {
+    @include flex (flex,row,center,center);
+    flex-wrap: wrap;
+    margin: 3rem;
+    background-image: url(/img/fondo.png);
+    .div-clientes {
+        background-color: #e8e5f198;
+        width: 35%;
+        margin: 3rem;
+        border-radius: 10%;
+        a {
+            text-decoration: none;
+            h1 {
+                color:#6452AC;
+                text-align: center;
+                padding: 1rem;
+                &:hover {
+                    color: tomato;
+                }
+            }
+        }
+        p {
+            text-align: justify;
+            font-size: large;
+            padding: 2rem;
+            padding-top: 0;
+        }
+        a {
+            .ver-mas {
+                margin: 1rem;
+                display: flex;
+                justify-content: center;
+                color: nth($colores, 1);
+                &:hover {
+                    color: nth($colores, 2);
+                }
+            }
+        }
+    } 
+}
+.contenido {
+    .detalle {
+        .div-detalle {
+            .serviciopages {
+                font-size: 3.5rem;
+                color:nth($colores, 3);
+                text-transform:lowercase;
+                padding: 2rem;
+                padding-bottom: 0;
+                letter-spacing: 10px;
+            }
+            p {
+                
+            }
+            .subtitulo {
+                text-decoration: overline;
+                text-decoration-color: white;
+            }
+            .testimonio {
+                width: 65%;
+                padding-top: 0;
+                ::first-line {
+                    font-weight: bolder;
+                    color:white;
+                } 
+            }
+        }
+    }
+}
+

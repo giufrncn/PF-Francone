@@ -44,6 +44,7 @@
                 font-size: xx-large;
                 color:nth($colores, 3);
                 text-transform: lowercase;
+                text-decoration-line:overline;
             }
             a {
                 .ver-mas {
@@ -69,16 +70,25 @@
         .div-detalle {
             @include flex (flex,column,center,center);
             width: 90%;
+            height: 90vh;
             text-align: center;
             border: 4px solid aliceblue;
             margin: 10px;
             a {
+                text-decoration: underline;
+                text-decoration-color: tomato;
+                &:hover {
+                    text-decoration-color: white;
+                }
                 h1 {
                     font-size: 3.5rem;
                     color:nth($colores, 3);
                     text-transform: lowercase;
                     padding: 2rem;
                     padding-bottom: 0;
+                    &:hover {
+                        color: tomato;
+                    }
                 }
             }
             p {
@@ -90,7 +100,6 @@
                 text-align: justify;
                 &::first-line {
                     font-weight: bolder;
-                    color:nth($colores, 5);
                 }
             }
         }

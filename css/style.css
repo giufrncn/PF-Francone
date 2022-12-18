@@ -99,7 +99,8 @@ header {
         transform: translate(-50%, -50%);
         font-size: xx-large;
         color: white;
-        text-transform: lowercase; }
+        text-transform: lowercase;
+        text-decoration-line: overline; }
       .contenido .catalogo .tarjeta a .ver-mas {
         position: absolute;
         top: 70%;
@@ -121,15 +122,23 @@ header {
       justify-content: center;
       align-items: center;
       width: 90%;
+      height: 90vh;
       text-align: center;
       border: 4px solid aliceblue;
       margin: 10px; }
-      .contenido .detalle .div-detalle a h1 {
-        font-size: 3.5rem;
-        color: white;
-        text-transform: lowercase;
-        padding: 2rem;
-        padding-bottom: 0; }
+      .contenido .detalle .div-detalle a {
+        text-decoration: underline;
+        text-decoration-color: tomato; }
+        .contenido .detalle .div-detalle a:hover {
+          text-decoration-color: white; }
+        .contenido .detalle .div-detalle a h1 {
+          font-size: 3.5rem;
+          color: white;
+          text-transform: lowercase;
+          padding: 2rem;
+          padding-bottom: 0; }
+          .contenido .detalle .div-detalle a h1:hover {
+            color: tomato; }
       .contenido .detalle .div-detalle p {
         font-size: 1.2rem;
         color: white;
@@ -138,8 +147,7 @@ header {
         padding-bottom: 3rem;
         text-align: justify; }
         .contenido .detalle .div-detalle p::first-line {
-          font-weight: bolder;
-          color: #f7b2c1; }
+          font-weight: bolder; }
 
 footer {
   display: grid;
@@ -238,6 +246,8 @@ footer {
   align-items: center;
   background-color: #f7b2c1;
   margin: 3rem;
+  margin-top: 0;
+  margin-bottom: 4rem;
   width: 92%; }
   .main-form .form .consulta {
     display: flex;
@@ -270,6 +280,59 @@ footer {
       box-shadow: 21px 23px 0px 3px #6452AC;
       -webkit-box-shadow: 21px 23px 0px 3px #6452AC;
       -moz-box-shadow: 21px 23px 0px 3px #6452AC; }
+
+.main-clientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+  background-image: url(/img/fondo.png); }
+  .main-clientes .div-clientes {
+    background-color: #e8e5f198;
+    width: 35%;
+    margin: 3rem;
+    border-radius: 10%; }
+    .main-clientes .div-clientes a {
+      text-decoration: none; }
+      .main-clientes .div-clientes a h1 {
+        color: #6452AC;
+        text-align: center;
+        padding: 1rem; }
+        .main-clientes .div-clientes a h1:hover {
+          color: tomato; }
+    .main-clientes .div-clientes p {
+      text-align: justify;
+      font-size: large;
+      padding: 2rem;
+      padding-top: 0; }
+    .main-clientes .div-clientes a .ver-mas {
+      margin: 1rem;
+      display: flex;
+      justify-content: center;
+      color: #302303; }
+      .main-clientes .div-clientes a .ver-mas:hover {
+        color: #6452AC; }
+
+.contenido .detalle .div-detalle .serviciopages {
+  font-size: 3.5rem;
+  color: white;
+  text-transform: lowercase;
+  padding: 2rem;
+  padding-bottom: 0;
+  letter-spacing: 10px; }
+
+.contenido .detalle .div-detalle .subtitulo {
+  text-decoration: overline;
+  text-decoration-color: white; }
+
+.contenido .detalle .div-detalle .testimonio {
+  width: 65%;
+  padding-top: 0; }
+  .contenido .detalle .div-detalle .testimonio ::first-line {
+    font-weight: bolder;
+    color: white; }
 
 @media screen and (max-width: 1075px) {
   .contenido .about p {
@@ -307,6 +370,9 @@ footer {
   .main-form .form .consulta {
     margin: 2rem; } }
 
+.contenido .detalle .div-detalle {
+  height: none; }
+
 @media screen and (max-width: 800px) {
   .contenido .detalle .div-detalle a h1 {
     font-size: 2rem; }
@@ -326,7 +392,9 @@ footer {
     padding: 2rem; }
   .main-form .form {
     margin: 0;
-    width: 100%; } }
+    width: 100%; }
+  .contenido .detalle .div-detalle {
+    height: auto; } }
 
 @media screen and (max-width: 500px) {
   header nav {
