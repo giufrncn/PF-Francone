@@ -315,24 +315,40 @@ footer {
       .main-clientes .div-clientes a .ver-mas:hover {
         color: #6452AC; }
 
-.contenido .detalle .div-detalle .serviciopages {
-  font-size: 3.5rem;
-  color: white;
-  text-transform: lowercase;
-  padding: 2rem;
-  padding-bottom: 0;
-  letter-spacing: 10px; }
-
-.contenido .detalle .div-detalle .subtitulo {
-  text-decoration: overline;
-  text-decoration-color: white; }
-
-.contenido .detalle .div-detalle .testimonio {
-  width: 65%;
-  padding-top: 0; }
-  .contenido .detalle .div-detalle .testimonio ::first-line {
-    font-weight: bolder;
-    color: white; }
+.contenido .detalle .div-detalle-servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  text-align: center;
+  border: 4px solid aliceblue;
+  margin: 10px; }
+  .contenido .detalle .div-detalle-servicios .serviciopages {
+    font-size: 3.5rem;
+    color: white;
+    text-transform: lowercase;
+    padding: 2rem;
+    padding-bottom: 0;
+    letter-spacing: 10px;
+    width: 90%; }
+  .contenido .detalle .div-detalle-servicios p {
+    width: 90%;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: white;
+    padding: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+  .contenido .detalle .div-detalle-servicios .subtitulo {
+    text-decoration: overline;
+    text-decoration-color: white; }
+  .contenido .detalle .div-detalle-servicios .testimonio {
+    width: 65%;
+    padding-top: 1rem; }
+    .contenido .detalle .div-detalle-servicios .testimonio ::first-line {
+      font-weight: bolder;
+      color: white; }
 
 @media screen and (max-width: 1075px) {
   .contenido .about p {
@@ -394,7 +410,10 @@ footer {
     margin: 0;
     width: 100%; }
   .contenido .detalle .div-detalle {
-    height: auto; } }
+    height: auto; }
+  .contenido .detalle .div-detalle-servicios .serviciopages {
+    padding: 0;
+    font-size: 2.5rem; } }
 
 @media screen and (max-width: 500px) {
   header nav {
@@ -441,7 +460,9 @@ footer {
     font-size: small; }
   .main-form .form .consulta .dejanos {
     padding: 1rem;
-    font-size: small; } }
+    font-size: small; }
+  .contenido .detalle .div-detalle-servicios .serviciopages {
+    font-size: 2rem; } }
 
 @media screen and (max-width: 320px) {
   .contenido {
