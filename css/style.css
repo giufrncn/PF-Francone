@@ -342,7 +342,8 @@ footer {
     padding-bottom: 3rem; }
   .contenido .detalle .div-detalle-servicios .subtitulo {
     text-decoration: overline;
-    text-decoration-color: white; }
+    text-decoration-color: white;
+    width: 90%; }
   .contenido .detalle .div-detalle-servicios .testimonio {
     width: 65%;
     padding-top: 1rem; }
@@ -413,7 +414,9 @@ footer {
     height: auto; }
   .contenido .detalle .div-detalle-servicios .serviciopages {
     padding: 0;
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .contenido .detalle .div-detalle-servicios .testimonio {
+    width: 90%; } }
 
 @media screen and (max-width: 500px) {
   header nav {
