@@ -361,6 +361,22 @@ footer {
       .contenido .detalle .div-detalle-servicios ul li a:hover {
         color: #f7b2c1; }
 
+.gracias .contenedor-gracias {
+  background: #000;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  color: rgba(250, 235, 215, 0.671);
+  margin: 1.5rem; }
+  .gracias .contenedor-gracias .h2gracias .h4gracias {
+    width: 70vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: bold; }
+  .gracias .contenedor-gracias .h4gracias {
+    font-size: 100px; }
+
 @media screen and (max-width: 1075px) {
   .contenido .about p {
     font-size: 4rem; }
