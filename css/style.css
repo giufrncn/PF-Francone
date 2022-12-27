@@ -67,8 +67,8 @@ header {
     .contenido .about p {
       font-size: 5rem;
       padding: 2rem;
-      padding-bottom: 3rem;
-      padding-top: 3rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
       height: 100%; }
   .contenido .catalogo {
     display: flex;
@@ -467,7 +467,7 @@ footer {
   .contenido .detalle .div-detalle-servicios .serviciopages {
     font-size: 2rem; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 290px) {
   .contenido {
     margin: 0;
     padding: 0; }
@@ -477,5 +477,5 @@ footer {
     width: 100%;
     margin-bottom: 1rem; }
   .contenido .catalogo .tarjeta {
-    width: 300px;
-    height: 300px; } }
+    width: 280px;
+    height: 280px; } }
