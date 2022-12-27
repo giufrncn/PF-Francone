@@ -61,7 +61,8 @@ header {
             color: #6452AC; }
 
 .contenido {
-  color: aliceblue; }
+  color: aliceblue;
+  width: 100%; }
   .contenido .about {
     width: 100%; }
     .contenido .about p {
@@ -353,7 +354,7 @@ footer {
 
 @media screen and (max-width: 1075px) {
   .contenido .about p {
-    font-size: 3rem; }
+    font-size: 4rem; }
   .contenido .detalle .div-detalle a h1 {
     font-size: 3rem; }
   .main-views .contenedorDetalle .detalleServicio {
@@ -451,13 +452,16 @@ footer {
     padding-top: 0;
     line-height: 1.2; }
   .contenido .catalogo .tarjeta {
-    width: 330px;
-    height: 330px; }
+    width: 280px;
+    height: 280px; }
+  .contenido .catalogo .tarjeta .servicio {
+    font-size: x-large; }
   .contenido .catalogo .tarjeta a .ver-mas {
     position: absolute;
     top: 80%;
     left: 50%; }
   .contenido .about p {
+    font-size: 3rem;
     line-height: 1.2; }
   .main-form .form .consulta input {
     font-size: small; }
@@ -467,15 +471,17 @@ footer {
   .contenido .detalle .div-detalle-servicios .serviciopages {
     font-size: 2rem; } }
 
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 350px) {
   .contenido {
     margin: 0;
     padding: 0; }
   .main-views .contenedorDetalle {
-    width: 90%; }
+    width: 100%; }
   .main-views .contenedorDetalle .detalleServicio {
-    width: 90%;
+    width: 100%;
     margin-bottom: 1rem; }
   .contenido .catalogo .tarjeta {
-    width: 280px;
-    height: 280px; } }
+    width: 230px;
+    height: 230px; }
+  .contenido .catalogo .tarjeta .servicio {
+    font-size: large; } }

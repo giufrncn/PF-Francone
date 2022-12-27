@@ -1,6 +1,7 @@
 @import"../base/variables";
 .contenido {
     color:nth($colores, 4);
+    width: 100%;
     .about {
         width: 100%;
         p {
