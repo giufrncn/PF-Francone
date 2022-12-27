@@ -18,6 +18,9 @@
                 a {
                 }
                 img {
+                    &:hover {
+                        opacity: 0.5;
+                    }
                 }
             }
         }
@@ -198,6 +201,19 @@
                     font-weight: bolder;
                     color:white;
                 } 
+            }
+            ul {
+                list-style: none;
+                padding: 3rem;
+                li {
+                    a { font-size: larger;
+                        &:hover {
+                            color: nth($colores, 5);
+                        }
+                        i {
+                        }
+                    }
+                }
             }
         }
     }
