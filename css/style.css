@@ -472,9 +472,9 @@ footer {
     margin: 0;
     padding: 0; }
   .main-views .contenedorDetalle {
-    width: 100%; }
+    width: 90%; }
   .main-views .contenedorDetalle .detalleServicio {
-    width: 100%;
+    width: 90%;
     margin-bottom: 1rem; }
   .contenido .catalogo .tarjeta {
     width: 280px;
